@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Terms of Service</title>
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #222; }
+  h1 { font-size: 1.8em; }
+  h2 { font-size: 1.2em; margin-top: 1.5em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>Terms of Service</h1>
+<p class="updated">Last updated: <span id="date"></span></p>
+
+<p>This application ("the App") is a personal-use tool that allows its owner to publish video content to their own connected social media accounts (including TikTok, Instagram, and YouTube) via each platform's official API.</p>
+
+<h2>1. Scope of Use</h2>
+<p>The App is operated for personal, non-commercial use by its owner. It is not offered as a public service, and no third parties are granted access to publish content through it.</p>
+
+<h2>2. Account Connections</h2>
+<p>The App connects only to social media accounts that are owned or explicitly authorized by the operator of the App. Authorization is granted through each platform's standard OAuth process, and the operator may revoke this access at any time through their account settings on the relevant platform.</p>
+
+<h2>3. Content</h2>
+<p>All content published through the App is selected, reviewed, and approved by the operator prior to publishing. The operator is solely responsible for ensuring that published content complies with the terms of service, community guidelines, and applicable laws of each destination platform.</p>
+
+<h2>4. No Warranty</h2>
+<p>The App is provided "as is," without warranty of any kind. The operator makes no guarantees regarding uptime, availability, or the successful publishing of any content.</p>
+
+<h2>5. Limitation of Liability</h2>
+<p>The operator of the App shall not be liable for any indirect, incidental, or consequential damages arising from the use of the App, including but not limited to lost content, missed publishing windows, or account restrictions imposed by third-party platforms.</p>
+
+<h2>6. Changes to These Terms</h2>
+<p>These Terms of Service may be updated from time to time. Continued use of the App after changes are posted constitutes acceptance of the revised terms.</p>
+
+<h2>7. Contact</h2>
+<p>For questions about these Terms, please contact the operator directly through the platform on which this application is registered.</p>
+
+<script>
+document.getElementById('date').textContent = new Date().toISOString().split('T')[0];
+</script>
+
+</body>
+</html>
