@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>OpenShorts</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%232563eb'/%3E%3Cpolygon points='38,28 38,72 72,50' fill='white'/%3E%3C/svg%3E">
+<style>
+  body { font-family: -apple-system, Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; line-height: 1.7; color: #222; }
+  header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; }
+  h1 { font-size: 1.8em; margin: 0; }
+  h2 { font-size: 1.2em; margin-top: 2em; color: #2563eb; }
+  p { color: #333; }
+  footer { margin-top: 3em; padding-top: 1.5em; border-top: 1px solid #ddd; font-size: 0.9em; color: #666; }
+  a { color: #2563eb; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .icon { width: 40px; height: 40px; }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect width="100" height="100" rx="20" fill="#2563eb"/>
+    <polygon points="38,28 38,72 72,50" fill="white"/>
+  </svg>
+  <h1>OpenShorts</h1>
+</header>
+
+<p>OpenShorts is a personal video tool that turns longer video content into short-form clips suitable for platforms like TikTok, Instagram Reels, and YouTube Shorts. It is used to create, review, and publish clips to accounts owned by the operator of this tool.</p>
+
+<h2>What it does</h2>
+<p>The application processes a source video, identifies notable moments, and produces vertically formatted clips with titles, captions, and hashtags. Once a clip is reviewed and approved, it can be published to the operator's own connected social media accounts through each platform's official API.</p>
+
+<h2>How publishing works</h2>
+<p>Publishing is performed using each platform's officially supported API (including TikTok's Content Posting API). Every publish action is manually triggered by the operator after reviewing the generated content. No content is published automatically or without review, and no accounts other than those explicitly connected by the operator are accessed.</p>
+
+<h2>Data handling</h2>
+<p>Account access tokens and video files are stored locally by the operator and are used solely to complete the publishing action described above. See the <a href="privacy.html">Privacy Policy</a> for full details.</p>
+
+<footer>
+  <p><a href="terms.html">Terms of Service</a> &nbsp;&middot;&nbsp; <a href="privacy.html">Privacy Policy</a></p>
+  <p>&copy; <span id="year"></span> OpenShorts</p>
+</footer>
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
